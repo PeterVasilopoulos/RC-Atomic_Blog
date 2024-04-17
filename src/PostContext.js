@@ -12,6 +12,7 @@ function createRandomPost() {
 // Context
 const PostContext = createContext()
 
+// Component
 function PostProvider({children}) {
     const [posts, setPosts] = useState(() =>
     Array.from({ length: 30 }, () => createRandomPost()));
